@@ -3,7 +3,7 @@
 use 5.12.0;
 use warnings;
 use utf8;
-use version; our $VERSION = qv('1.0.0');
+use version; our $VERSION = qv('1.0.1');
 
 my $target_type    = "*.txt *.md";
 my $target_strings = "TODO: ";
@@ -67,21 +67,21 @@ todo - トドちゃんを数えるスクリプト
 
 =head1 SYNOPSIS
 
-引数を省略すると、~/Dropbox/を調べる。
+引数を省略すると、~/src/を調べる。
 
  % todo
 
 第一引数にディレクトリ名を渡すと、そのディレクトリを調べる。
 
- % todo Documents/
+ % todo doc/
 
 =head1 DESCRIPTION
 
-*.txtファイル及び*.mdファイルに対して、
-ファイル内の“TODO: ”文字列ををカウントする。
-“TODO: ”の合計件数も表示する。
+*.txt ファイル及び *.md ファイルに対して、
+ファイル内の “TODO: ” 文字列ををカウントする。
+“TODO: ” の合計件数も表示する。
 
-※一行に複数の“TODO: ”が存在しても、カウントは一つ。
+※一行に複数の “TODO: ” が存在しても、カウントは一つ。
 
 =head1 SEE ALSO
 
